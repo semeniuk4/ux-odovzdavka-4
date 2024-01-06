@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TEST system</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-body">
+                    <nav class="header-nav">
+                        <a href="#">
+                            <img src="../icons/logo-white.svg" alt="logo">
+                        </a>
+                        <ul class="head-menu">
+                            <li class="head-menu-item">
+
+                                <a href="#" class="head-menu-link active" id="mainMenu">
+                                    <div class="triangle"></div>
+                                    Patients
+                                    <div class="triangle-right"></div>
+                                </a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Hospitals</a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Notice</a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Help Center</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-vigets">
+                        <ul class="header-vigets-list">
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/chat.svg" alt="chat">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/equalizer.svg" alt="equalizer">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/blocks.svg" alt="blocks">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header-user">
+                            <div class="header-user-info">
+                                <span>John Sem</span>
+                                <span>Doctor</span>
+                            </div>
+                            <div class="header-avatar">
+                                <span>IS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="burger"></button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-options">
+                    <div class="header-tab active">
+                        Patients
+                    </div>
+                    <div class="header-tab">
+                        Add a new patient
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="info-wrapper">
+                    <div class="info-tabs">
+                        <div class="info-tab active">
+                            <span class="tab-number">1</span>
+                            <span>Basic information</span>
+                        </div>
+                        <div class="info-tab">
+                            <span class="tab-number">2</span>
+                            <span>Detection of Parkinson’s Disease</span>
+                        </div>
+                    </div>
+
+                    <form action="" class="info-form">
+                        <h3 class="info-form-title">Basic information</h3>
+                        <div class="info-form-body">
+                            <div class="info-form-part">
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">Patient’s first name</label>
+                                    <input type="text" name="firstName" class="form-control" id="firstName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Patient’s last name</label>
+                                    <input type="text" name="lastName" class="form-control" id="lastName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Patient’s email address</label>
+                                    <input type="text" name="address" class="form-control" id="address">
+                                </div>
+                            </div>
+                            <div class="info-form-part">
+                                <div class="mb-3">
+                                    <label class="form-label">Patient’s date of birth</label>
+                                    <div class="date-inputs">
+                                        <input type="number" name="day" class="form-control" placeholder="DD">
+                                        <input type="number" name="month" class="form-control" placeholder="MM">
+                                        <input type="number" name="year" class="form-control" placeholder="YYYY">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="card" class="form-label">Patient’s card number</label>
+                                    <input type="number" name="card" class="form-control" id="card">
+                                </div>
+                                <div class="mb-3">
+                                    <div class="">
+                                        <label for="gender" class="form-label">Gender</label>
+                                        <select id="gender" name="gender" class="form-select">
+                                            <option value="" disabled selected>Select patient`s gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-agreement">
+                            <div class="form-checkbox">
+                                <label for="agreement">Did the patient agree to the processing of personal data?</label>
+                                <input type="checkbox" id="agreement" name="agreement">
+                            </div>
+                            <span>*</span>
+                        </div>
+                        <div class="info-form-btn">
+                            <button class="btn info-btn-success" id="detectionMenu" type="button">NEXT STEP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        document.getElementById("detectionMenu").onclick = function () {
+            location.href = "../pages/detection.html";
+        };
+    </script>
+     <script type="text/javascript">
+        document.getElementById("mainMenu").onclick = function () {
+            location.href = "../pages/patients.html";
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TEST system</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-body">
+                    <nav class="header-nav">
+                        <a href="#">
+                            <img src="../icons/logo-white.svg" alt="logo">
+                        </a>
+                        <ul class="head-menu">
+                            <li class="head-menu-item">
+
+                                <a href="#" class="head-menu-link active" id="mainMenu">
+                                    <div class="triangle"></div>
+                                    Patients
+                                    <div class="triangle-right"></div>
+                                </a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Hospitals</a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Notice</a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Help Center</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-vigets">
+                        <ul class="header-vigets-list">
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/chat.svg" alt="chat">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/equalizer.svg" alt="equalizer">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/blocks.svg" alt="blocks">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header-user">
+                            <div class="header-user-info">
+                                <span>John Sem</span>
+                                <span>Doctor</span>
+                            </div>
+                            <div class="header-avatar">
+                                <span>IS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="burger"></button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-options">
+                    <div class="header-tab active">
+                        Patients
+                    </div>
+                    <div class="header-tab">
+                        Adminstration
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="report">
+                    <h2 class="report-title">Patient Report</h2>
+                    <div class="report-body">
+                        <div class="report-top">
+                            <div class="report-patient">
+                                <div class="patient-avatar">
+                                    <img src="../images/girl-16.png" alt="patient">
+                                </div>
+                                <p class="patient-name">Kristin Watson</p>
+                                <p class="patient-data">Patient ID: <span id="patient-id">93874563</span></p>
+                                <p class="patient-data">Age: <span id="patient-age">68</span></p>
+                                <p class="patient-data">Status of PD: <span id="patient-result" class="confirmed">CONFIRMED</span></p>
+                            </div>
+                            <div class="report-chart">
+                                <img src="../images/chart.png" alt="statistics">
+                            </div>
+                        </div>
+                        <div class="report-bottom">
+                            <div class="report-metrics">
+                                <div class="report-indicator">
+                                    <div class="indicator-label">
+                                        <img src="../images/heart.png" alt="heart">
+                                        <span>Heart Rate</span>
+                                    </div>
+                                    <p class="indicator-bpm"><span id="indicator-bpm">98</span> bpm</p>
+                                    <span class="indicator-status">Normal</span>
+                                    <div>
+                                        <img src="../images/red-wave.png" alt="wave">
+                                    </div>
+                                </div>
+                                <div class="report-indicator">
+                                    <div class="indicator-label">
+                                        <img src="../images/pressure.png" alt="drop">
+                                        <span>Blood Pressure</span>
+                                    </div>
+                                    <p class="indicator-mmhg"><span id="indicator-bpm">102</span><span
+                                            id="indicator-mmhg-bottom">/72</span>mmhg</p>
+                                    <span class="indicator-status blue">Normal</span>
+                                    <div>
+                                        <img src="../images/blue-wave.png" alt="wave">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="report-finish">
+                                <p class="report-text">Prediction of Parkinson’s Disease based on patient’s Speech: <span id="result-percent" class="confirmed">96.876%</span></p>
+
+                                <div class="report-btns">
+                                    <button class="report-btn">Export to PDF</button>
+                                    <button class="report-btn return-btn" id="returnMainPage">Return to Main Page</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        document.getElementById("returnMainPage").onclick = function () {
+            location.href = "../pages/patients.html";
+        };
+    </script>
+     <script type="text/javascript">
+        document.getElementById("mainMenu").onclick = function () {
+            location.href = "../pages/patients.html";
+        };
+    </script>
+</body>
+
+</html>

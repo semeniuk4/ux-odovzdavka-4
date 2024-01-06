@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TEST system</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-body">
+                    <nav class="header-nav">
+                        <a href="#">
+                            <img src="../icons/logo-white.svg" alt="logo">
+                        </a>
+                        <ul class="head-menu">
+                            <li class="head-menu-item">
+
+                                <a href="#" class="head-menu-link active">
+                                    <div class="triangle"></div>
+                                    Patients
+                                    <div class="triangle-right"></div>
+                                </a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Hospitals</a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Notice</a>
+                            </li>
+                            <li class="head-menu-item">
+                                <a href="#" class="head-menu-link">Help Center</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-vigets">
+                        <ul class="header-vigets-list">
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/chat.svg" alt="chat">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/equalizer.svg" alt="equalizer">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../icons/blocks.svg" alt="blocks">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header-user">
+                            <div class="header-user-info">
+                                <span>John Sem</span>
+                                <span>Doctor</span>
+                            </div>
+                            <div class="header-avatar">
+                                <span>IS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="burger"></button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-options">
+                    <div class="header-tab active">
+                        Patients
+                    </div>
+                    <div class="header-tab">
+                        Adminstration
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="patients-body">
+                    <div class="panel">
+                        <div class="panel-search">
+                            <div class="panel-text">
+                                <div class="panel-heading">List of patients</div>
+                                <div class="panel-total">345 patients</div>
+                            </div>
+                            <div id="search">
+                                <input class="panel-input" type="text" placeholder="Search">
+                            </div>
+                        </div>
+                        <button class="patient-add-btn" id="redirectNewPatient">
+                            <img src="../icons/add-user.svg" alt="user">
+                            Add new patient
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="patient-name-td">Name</th>
+                            <th class="hide">ID</th>
+                            <th class="hide">Email</th>
+                            <th class="hide">Phone number</th>
+                            <th class="hide">Date added</th>
+                            <th>Status of PD</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="patient-name-td">
+                                <img src="../images/boy1.png" alt="boy">
+                                Brooklyn Simmons
+                            </td>
+                            <td class="hide">87364523</td>
+                            <td class="hide">brooklyns@example.com</td>
+                            <td class="hide">(123) 456-7890</td>
+                            <td class="hide">
+                                <div class="date-time">
+                                    <span>24/12/2022</span>
+                                    <span>03:00 PM</span>
+                                </div>
+                            </td>
+                            <td class="status"><span>Not confirmed</span></td>
+                            <td>
+                                <button>
+                                    <img src="../icons/arrow-list.svg" id="reportNotConfirmed" alt="arrow">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="patient-name-td">
+                                <img src="../images/girl1.png" alt="boy">
+                                Kristin Watson
+                            </td>
+                            <td class="hide">93874563</td>
+                            <td class="hide">kristinw@example.com</td>
+                            <td class="hide">(123) 456-7890</td>
+                            <td class="hide">
+                                <div class="date-time">
+                                    <span>24/12/2022</span>
+                                    <span>03:00 PM</span>
+                                </div>
+                            </td>
+                            <td class="status confirmed"><span>Confirmed</span></td>
+                            <td>
+                                <button>
+                                    <img src="../icons/arrow-list.svg" id="reportConfirmed" alt="arrow">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="patient-name-td">
+                                <img src="../images/boy2.png" alt="boy">
+                                Jacob Jones
+                            </td>
+                            <td class="hide">39485632</td>
+                            <td class="hide">jacobj@example.com</td>
+                            <td class="hide">(123) 456-7890</td>
+                            <td class="hide">
+                                <div class="date-time">
+                                    <span>24/12/2022</span>
+                                    <span>03:00 PM</span>
+                                </div>
+                            </td>
+                            <td class="status"><span>Not confirmed</span></td>
+                            <td>
+                                <button>
+                                    <img src="../icons/arrow-list.svg" alt="arrow">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="patient-name-td">
+                                <img src="../images/girl2.png" alt="boy">
+                                Cody Fisher
+                            </td>
+                            <td class="hide">87364523</td>
+                            <td class="hide">codyf@example.com</td>
+                            <td class="hide">(123) 456-7890</td>
+                            <td class="hide">
+                                <div class="date-time">
+                                    <span>24/12/2022</span>
+                                    <span>03:00 PM</span>
+                                </div>
+                            </td>
+                            <td class="status"><span>Not confirmed</span></td>
+                            <td>
+                                <button>
+                                    <img src="../icons/arrow-list.svg" alt="arrow">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="patient-name-td">
+                                <img src="../images/boy1.png" alt="boy">
+                                Brooklyn Simmons
+                            </td>
+                            <td class="hide">93874563</td>
+                            <td class="hide">john@example.com</td>
+                            <td class="hide">(123) 456-7890</td>
+                            <td class="hide">
+                                <div class="date-time">
+                                    <span>24/12/2022</span>
+                                    <span>03:00 PM</span>
+                                </div>
+                            </td>
+                            <td class="status"><span>Not confirmed</span></td>
+                            <td>
+                                <button>
+                                    <img src="../icons/arrow-list.svg" alt="arrow">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="patient-name-td">
+                                <img src="../images/girl1.png" alt="boy">
+                                Kristin Watson
+                            </td>
+                            <td class="hide">87364523</td>
+                            <td class="hide">john@example.com</td>
+                            <td class="hide">(123) 456-7890</td>
+                            <td class="hide">
+                                <div class="date-time">
+                                    <span>24/12/2022</span>
+                                    <span>03:00 PM</span>
+                                </div>
+                            </td>
+                            <td class="status confirmed"><span>Confirmed</span></td>
+                            <td>
+                                <button>
+                                    <img src="../icons/arrow-list.svg" alt="arrow">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="patient-name-td">
+                                <img src="../images/boy2.png" alt="boy">
+                                Jacob Jones
+                            </td>
+                            <td class="hide">39485632</td>
+                            <td class="hide">john@example.com</td>
+                            <td class="hide">(123) 456-7890</td>
+                            <td class="hide">
+                                <div class="date-time">
+                                    <span>24/12/2022</span>
+                                    <span>03:00 PM</span>
+                                </div>
+                            </td>
+                            <td class="status"><span>Not confirmed</span></td>
+                            <td>
+                                <button>
+                                    <img src="../icons/arrow-list.svg" alt="arrow">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="patient-name-td">
+                                <img src="../images/girl2.png" alt="boy">
+                                Cody Fisher
+                            </td>
+                            <td class="hide">87364523</td>
+                            <td class="hide">codyf@example.com</td>
+                            <td class="hide">(123) 456-7890</td>
+                            <td class="hide">
+                                <div class="date-time">
+                                    <span>24/12/2022</span>
+                                    <span>03:00 PM</span>
+                                </div>
+                            </td>
+                            <td class="status"><span>Not confirmed</span></td>
+                            <td>
+                                <button>
+                                    <img src="../icons/arrow-list.svg" alt="arrow">
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+                <ul class="pagination">
+                    <li class="pagination-item">
+                        <a href="#" class="pagination-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M15.1599 7.41L10.5799 12L15.1599 16.59L13.7499 18L7.74991 12L13.7499 6L15.1599 7.41Z"
+                                    fill="#C4CDD5" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="pagination-item"><a href="#" class="pagination-link active">1</a></li>
+                    <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+                    <li class="pagination-item"><a href="#" class="pagination-link">...</a></li>
+                    <li class="pagination-item"><a href="#" class="pagination-link">9</a></li>
+                    <li class="pagination-item"><a href="#" class="pagination-link">10</a></li>
+                    <li class="pagination-item">
+                        <a href="#" class="pagination-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M8.84009 7.41L13.4201 12L8.84009 16.59L10.2501 18L16.2501 12L10.2501 6L8.84009 7.41Z"
+                                    fill="#C4CDD5" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </section>
+    </main>
+    <script type="text/javascript">
+        document.getElementById("redirectNewPatient").onclick = function () {
+            location.href = "../pages/info.html";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("reportNotConfirmed").onclick = function () {
+            location.href = "../pages/report.html";
+        };
+    </script>
+     <script type="text/javascript">
+        document.getElementById("reportConfirmed").onclick = function () {
+            location.href = "../pages/report.html";
+        };
+    </script>
+</body>
+
+</html>
